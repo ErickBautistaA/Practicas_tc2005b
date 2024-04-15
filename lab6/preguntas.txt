@@ -1,0 +1,8 @@
+¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+porque de esa forma los datos no deseados no van a pasar ese filtro y la informacion no se vera afectada.
+
+¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?
+en el caso de mi pagina seria usando el link a la pagina de venta.
+
+Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?
+siempre es bueno tratar de asegurar el acceso, dependiendo de la ocacion.
