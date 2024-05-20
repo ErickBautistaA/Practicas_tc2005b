@@ -1,0 +1,22 @@
+
+<p>Before the script...</p>
+
+<p>Los otros templatings que se pueden usar son:</p>
+
+<p>Pug (anteriormente conocido como Jade): Ofrece una sintaxis concisa y expresiva.</p>
+
+<p>EJS (Embedded JavaScript): Te permite incrustar código JavaScript dentro de tus plantillas.</p>
+
+<p>Handlebars: Un motor simple y potente con una sintaxis similar a HTML.</p>
+
+<p>...After the script.</p>
+
+<%
+    for(var i = 0; i < frases.length; i++){
+%>
+        <p><%= frases[i] %></p>
+<% 
+    }
+%>
+
+<%- include('footer.ejs') %>a
