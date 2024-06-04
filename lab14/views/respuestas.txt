@@ -1,0 +1,10 @@
+beneficios:
+Facilita el Mantenimiento y la Escalabilidad.
+Reutilización de Código.
+Desarrollo Colaborativo.
+
+desventajas:
+Complejidad Inicial.
+Curva de Aprendizaje.
+Sobrecarga de Código.
+Integración con Otras Arquitecturas.
