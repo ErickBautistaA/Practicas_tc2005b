@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos</title>
+</head>
+<body>
+    <h1>Lista de Videojuegos</h1>
+    <ul>
+        <% videojuegos.forEach(videojuego => { %>
+            <li><%= videojuego.nombre %> - <%= videojuego.plataforma %></li>
+        <% }); %>
+    </ul>
+    <form action="/videojuegos" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre del videojuego">
+        <input type="text" name="plataforma" placeholder="Plataforma">
+        <button type="submit">Agregar Videojuego</button>
+    </form>
+</body>
+</html>
