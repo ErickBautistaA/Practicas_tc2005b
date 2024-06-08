@@ -1,0 +1,27 @@
+
+beneficios de estilo csv
+    separacion de concerns:
+        Modularidad
+        Escalabilidad
+    
+    Reutilizacion de codigo.
+        Reutilizacion de modelos
+        Reutilizacion de vistas
+
+    Facilidad de pruebas
+        en esta se encuentra la testeabilidad.
+
+    Mantenibilidad.
+
+    Flexibilidad.
+
+Desventajas
+    Conplejidad inicial
+
+    Sobrecarga para aplicaciones pequeñas
+
+    Duplicidad de codigo
+
+    Rendimiento
+
+    Complicacion de navegacion.

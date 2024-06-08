@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form id="registro-form">
+        <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        <input type="hidden" id="_csrf" name="_csrf" value="<%= csrfToken %>">
+        <button type="button" id="registro-btn">Registrar</button>
+    </form>
+
+    <script>
+        document.getElementById('registro-btn').addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const csrf = document.getElementById('_csrf').value;
+
+            fetch('/usuarios/registro-ajax', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'csrf-token': csrf
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(err => {
+                console.error(err);
+                alert('Error al registrar el usuario');
+            });
+        });
+    </script>
+</body>
+</html>
